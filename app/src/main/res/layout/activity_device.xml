@@ -65,17 +65,18 @@
                     android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent" />
+
                 <TextView
-                    android:textColor="#FFFFFF"
-                    android:layout_width="wrap_content"
+                    android:id="@+id/temp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="48dp"
-                    android:layout_marginBottom="68dp"
-                    android:text="20℃"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
                     android:textSize="50dp"
                     android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_editor_absoluteX="16dp" />
             </androidx.constraintlayout.widget.ConstraintLayout>
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:backgroundTint="#26539C"
@@ -96,16 +97,16 @@
                     app:layout_constraintEnd_toEndOf="parent" />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:id="@+id/humi"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="40dp"
-                    android:layout_marginBottom="60dp"
-                    android:text="50%"
+                    android:gravity="center"
                     android:textColor="#FFFFFF"
                     android:textSize="50dp"
                     android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_editor_absoluteX="16dp" />
             </androidx.constraintlayout.widget.ConstraintLayout>
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:backgroundTint="#D94844"
@@ -125,16 +126,16 @@
                     app:layout_constraintEnd_toEndOf="parent" />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:id="@+id/illu"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="68dp"
-                    android:layout_marginBottom="68dp"
-                    android:text="70"
+                    android:gravity="center"
                     android:textColor="#FFFFFF"
                     android:textSize="50dp"
                     android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_editor_absoluteX="16dp" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
 

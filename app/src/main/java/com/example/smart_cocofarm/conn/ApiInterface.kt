@@ -11,4 +11,10 @@ interface ApiInterface {
 
     @GET("/image/{filename}")
     fun getImage(@Path("filename") filename: String): Call<ResponseBody>
+
+    @GET
+    fun getGet(@Url url: String): Call<String>
+
+
+
 }
