@@ -14,14 +14,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <TextView
+            android:id="@+id/username"
             android:textStyle="bold"
             android:textSize="28dp"
-            android:text="USER"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
         <TextView
+            android:id="@+id/count"
             android:textColor="#123456"
-            android:text="1개 기기"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
     </LinearLayout> <!-- user information -->
