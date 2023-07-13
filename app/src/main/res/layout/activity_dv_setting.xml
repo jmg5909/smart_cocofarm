@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_marginBottom="25dp"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="기기 설정"
+        android:paddingHorizontal="0dp"
+        android:background="#CAEEBE"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+
+    <LinearLayout
+        android:layout_marginVertical="5dp"
+        android:paddingVertical="8dp"
+        android:paddingHorizontal="15dp"
+        android:id="@+id/modifytab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:textColor="#121212"
+            android:text="기기 이름 변경"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/dvname"
+            android:textStyle="bold"
+            android:textColor="#A8AAA5"
+            android:layout_marginHorizontal="10dp"
+            android:text="기기명"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:src="@drawable/vector_right"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/firmwaretab"
+        android:layout_marginVertical="5dp"
+        android:paddingVertical="8dp"
+        android:paddingHorizontal="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:textColor="#121212"
+            android:text="펌웨어 업데이트"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"/>
+        <ImageView
+            android:src="@drawable/vector_right"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/settingtab"
+        android:layout_marginVertical="5dp"
+        android:paddingVertical="8dp"
+        android:paddingHorizontal="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:textColor="#121212"
+            android:text="추가 설정"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"/>
+        <ImageView
+            android:src="@drawable/vector_right"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_remove"
+        android:clickable="true"
+        android:textColor="#FF3300"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="25dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="기기 제거"
+        android:background="@drawable/round_text2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+
+
+
+
+</LinearLayout>

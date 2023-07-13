@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/vector_house"
+        android:title="Coco Home"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/stats"
+        android:icon="@drawable/vector_stats"
+        android:title="통계"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/profile"
+        android:checked="true"
+        android:icon="@drawable/vector_person"
+        android:title="프로필"
+        app:showAsAction="ifRoom" />
+</menu>

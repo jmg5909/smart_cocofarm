@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/add_device"
+        android:title="기기 추가"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/qr_scan"
+        android:title="QR코드 스캔"
+        app:showAsAction="never" />
+
+
+</menu>

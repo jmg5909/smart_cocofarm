@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_marginBottom="25dp"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="도움말"
+        android:paddingHorizontal="0dp"
+        android:background="#CAEEBE"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="5dp"
+        android:paddingHorizontal="20dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_ko"
+            android:layout_marginHorizontal="15dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="한국어"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/shape_for_circle_button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_en"
+            android:layout_marginHorizontal="15dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="English"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/shape_for_circle_button"
+            android:backgroundTint="#26539C"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_jp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="日本語"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/shape_for_circle_button"
+            android:backgroundTint="#D94844"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <View
+            android:visibility="visible"
+            android:id="@+id/ko_select"
+            android:layout_marginHorizontal="15dp"
+            android:background="#A2CD48"
+            android:layout_width="80dp"
+            android:layout_height="5dp"/>
+        <View
+            android:visibility="invisible"
+            android:id="@+id/en_select"
+            android:layout_marginHorizontal="15dp"
+            android:background="#26539C"
+            android:layout_width="80dp"
+            android:layout_height="5dp"/>
+        <View
+            android:visibility="invisible"
+            android:id="@+id/jp_select"
+            android:layout_marginHorizontal="15dp"
+            android:background="#D94844"
+            android:layout_width="80dp"
+            android:layout_height="5dp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="15dp"
+        android:layout_gravity="center"
+        android:background="#E0E0E0"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <ExpandableListView
+        android:paddingHorizontal="20dp"
+        android:id="@+id/expandableListView"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:indicatorLeft="?android:attr/expandableListPreferredItemIndicatorLeft"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="0.5dp" />
+
+
+</LinearLayout>
